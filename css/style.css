@@ -1,0 +1,275 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&family=Merriweather:wght@700&family=Raleway:wght@500&family=Roboto&display=swap');
+html {
+   box-sizing: border-box;
+   height: 100%;
+   margin: 0;
+}
+
+:root {
+   --second-bg-color: rgba(63, 90, 114, 0.6);
+   --text-color: #fff;
+   --main-color: rgb(90, 178, 255);
+   --main-font-size: 1rem;
+} 
+
+body {
+   font-family: Arial, sans-serif;
+   background: url("../img/bg14.jpg")no-repeat;
+   background-position: center;
+   background-size: cover;
+   font-family: 'Raleway', sans-serif;
+}
+
+.container {
+   position: absolute;
+   text-align: center;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50% , -50%);
+   width: 30rem;
+   padding: 3rem;
+   background-color: transparent;
+   backdrop-filter: blur(0.3rem);
+   border: 0.2rem solid var(--main-color);
+   border-radius: 1rem;
+   box-shadow: 1rem 1rem 1rem rgba(63, 90, 114, 0.6);
+}
+
+.container1{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   position: absolute;
+   min-height: 30%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 30rem;
+   padding: 3rem;
+   background-color: transparent;
+   backdrop-filter: blur(0.3rem);
+   border: 0.2rem solid var(--main-color);
+   border-radius: 1rem;
+   box-shadow: 1rem 1rem 1rem rgba(63, 90, 114, 0.6);
+}
+
+main {
+   text-align: center;
+   margin-bottom: 2rem;
+}
+.hearts {
+   position: absolute;
+   left: 75%;
+   top: 5%;
+}
+.heart{
+   width: 2rem;
+}
+
+h1 {
+   color: var(--main-color);
+}
+h4 {
+   font-weight: 650;
+   font-size: 1.3rem;
+   color: var(--text-color);
+}
+h5{
+   font-size: 1.3rem;
+   font-weight: 600;
+   text-align: center;
+   color: var(--text-color);
+}
+#name__country {
+   font-size: 1.7rem;
+   color: var(--main-color);
+   text-decoration: underline;
+}
+.score{
+   color: var(--main-color);
+}
+
+
+.bt {
+   text-align: center;
+   text-decoration: none;
+   width: 7rem;
+   padding: 0.7rem 1.8rem;
+   font-size: var(--main-font-size);
+   background-color: var(--main-color);
+   color: var(--text-color);
+   border: none;
+   border-radius: 0.7rem;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+   margin: 1rem;
+}
+
+.bt:hover{
+   background: rgb(90, 149, 200);
+}
+
+footer {
+   text-align: center;
+   color: var(--text-color);
+}
+
+
+.countries{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+
+
+.btn{
+   margin: 2rem;
+   width: 10rem;
+   height: 7rem;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   border-radius: 0.4rem;
+   border: 3px solid var(--main-color);
+}
+.btn:hover{
+   border: 3px solid var(--text-color);
+   cursor: pointer;
+}
+
+.sign{
+   width: 4rem;
+   animation: sign 1s 1;
+}
+
+.game__stage{
+   display: flex;
+   flex-direction: column;
+}
+
+@keyframes sign {
+   0%{transform: translateY(0);}
+   50% {transform: translateY(2rem);}
+   100% {transform: translateY(0);}
+}
+@keyframes btnNextRound {
+   0% {
+      opacity: 0;
+      transform: translateX(0rem);
+   }
+   50% {
+      opacity: 0.6;
+      transform: translateX(2rem);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0rem);
+   }
+}
+
+/*next round button*/
+
+.next{
+   display: inline-block;
+   padding: 0.8rem 1.6rem;
+   background-color: var(--main-color);
+   color: var(--text-color);
+   border: none;
+   border-radius: 0.4rem;
+   font-size: var(--main-font-size);
+   font-weight: 550;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+   animation: btnNextRound 1s 1;
+}
+
+.next:hover{
+   background-color: #1976D2;
+   transform: translateY(-2px);
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16), 0 4px 8px rgba(0, 0, 0, 0.32);
+}
+
+.end {
+   display: inline-block;
+   padding: 0.8rem 1.6rem;
+   background-color: var(--main-color);
+   color: var(--text-color);
+   border: none;
+   border-radius: 0.4rem;
+   font-size: var(--main-font-size);
+   font-weight: 550;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+   animation: btnNextRound 1s 1;
+}
+
+.end:hover {
+   background-color: #1976D2;
+   transform: translateY(-2px);
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16), 0 4px 8px rgba(0, 0, 0, 0.32);
+}
+
+.menu {
+   display: inline-block;
+   padding: 0.8rem 1.6rem;
+   background-color: var(--main-color);
+   color: var(--text-color);
+   border: none;
+   border-radius: 0.4rem;
+   font-size: var(--main-font-size);
+   font-weight: 550;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+   cursor: pointer;
+   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+   animation: btnNextRound 1s 1;
+}
+
+.menu:hover {
+   background-color: #1976D2;
+   transform: translateY(-2px);
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16), 0 4px 8px rgba(0, 0, 0, 0.32);
+}
+
+/**  container hidden for results of the game **/
+
+.container__result{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   z-index: 1324;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 30rem;
+   height: 80%;
+   padding: 3rem;
+   background-color: transparent;
+   backdrop-filter: blur(5rem);
+   border: 0.2rem solid var(--main-color);
+   border-radius: 1rem;
+   box-shadow: 1rem 1rem 1rem rgba(63, 90, 114, 0.6);
+   text-align: center;
+}
+
+.hidden {
+   display: none;
+}
+
+.score__information{
+
+   color: var(--text-color);
+   margin: 4rem;
+   padding: 2rem;
+   border: 2px solid var(--main-color);
+   border-radius: 2rem;
+
+}
+
+
+
